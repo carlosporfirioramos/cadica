@@ -29,32 +29,32 @@ class About extends StatelessWidget {
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      height: size.height,
-      width:size.width - 100,
+      // height: size.height,
+      // width:size.width - 100,
       child: Row(
         children: [
           //Profile Image
           Expanded(
             child: Container(
-              height: size.height / 1.5,
-              width: size.width / 2 - 100,
+              // height: size.height / 1.5,
+              // width: size.width / 2 - 100,
               // color: Colors.white,
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  Positioned(
-                    top: size.height * 0.12,
-                    left: size.width * 0.120,
-                    child: Card(
-                      color: Color(0xff61F9D5),
-                      child: Container(
-                        margin: EdgeInsets.all(2.75),
-                        height: size.height / 2,
-                        width: size.width / 5,
-                        color: Color(0xff0A192F),
-                      ),
-                    ),
-                  ),
+                  // Positioned(
+                  //   top: size.height * 0.12,
+                  //   left: size.width * 0.120,
+                  //   child: Card(
+                  //     color: Color(0xff61F9D5),
+                  //     child: Container(
+                  //       margin: EdgeInsets.all(2.75),
+                  //       height: size.height / 2,
+                  //       width: size.width / 5,
+                  //       color: Color(0xff0A192F),
+                  //     ),
+                  //   ),
+                  // ),
                   CustomImageAnimation()
                 ],
               ),
@@ -70,17 +70,8 @@ class About extends StatelessWidget {
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // CustomText(
-                    //   text: "01.",
-                    //   textsize: 20.0,
-                    //   color: Color(0xff61F9D5),
-                    //   fontWeight: FontWeight.w700,
-                    // ),
-                    // SizedBox(
-                    //   width: 12.0,
-                    // ),
                     CustomText(
-                      text: "Principais Lojas",
+                      text: "Quem somos",
                       textsize: 26.0,
                       color: kTextColor,
                       fontWeight: FontWeight.w700,
@@ -105,24 +96,12 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text:
-                          "Hello! I'm Tushar, a Freelancer based in Nashik, IN.\n\nI enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that provide pixel-perfect, performant experiences.\n\n",
+                          "A CADICA é uma carteira digital que permite fazer pagamentos em tempo "
+                              "real em e-commerces com o benefício de cashback e permite fazer o "
+                              "pagamento parcelado com o cartão de débito virtual.\n"
+                              "\nRecarregue e pague os bens e serviços através da CADICA de modo simples, rápido e seguro.",
                       textsize: 16.0,
                       color: Color(0xff828DAA),
-                      letterSpacing: 0.75,
-                    ),
-                    CustomText(
-                      text:
-                          "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n\n",
-                      textsize: 16.0,
-                      color: Color(0xff828DAA),
-                      letterSpacing: 0.75,
-                    ),
-                    CustomText(
-                      text:
-                          "Here are a few technologies I've been working with recently:\n\n",
-                      textsize: 16.0,
-                      color: Color(0xff828DAA),
-                      // fontWeight: FontWeight.w500,
                       letterSpacing: 0.75,
                     ),
                   ],
@@ -211,27 +190,13 @@ class _CustomImageAnimationState extends State<CustomImageAnimation> {
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
-    return MouseRegion(
-      onEnter: _incrementEnter,
-      onHover: _updateLocation,
-      onExit: _incrementExit,
-      child: Stack(
-        children: [
-          Container(
-            height: size.height / 2,
-            width: size.width / 5,
-            color: Colors.black54,
-            child: Image(
-              fit: BoxFit.cover,
-              image: AssetImage("images/pic1.jpeg"),
-            ),
-          ),
-          Container(
-            height: size.height / 2,
-            width: size.width / 5,
-            color: customImageColor,
-          ),
-        ],
+    return Container(
+      height: size.height ,
+      width: size.width ,
+      color: Colors.transparent,
+      child: Image(
+        fit: BoxFit.cover,
+        image: AssetImage("images/cheque1.png"),//todo aqui
       ),
     );
   }

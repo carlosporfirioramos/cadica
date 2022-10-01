@@ -4,34 +4,34 @@ import 'package:cadica/Widget/CustomText.dart';
 
 class FeatureProject extends StatelessWidget {
   final String imagePath;
-  final String projectTitle;
-  final String projectDesc;
-  final String tech1;
-  final String tech2;
-  final String tech3;
+  final String? projectTitle;
+  final String? projectDesc;
+  final String? tech1;
+  final String? tech2;
+  final String? tech3;
   final ontab;
 
   FeatureProject(
       {required this.imagePath,
       this.ontab,
       required this.projectDesc,
-      required this.projectTitle,
-      required this.tech1,
-      required this.tech2,
-      required this.tech3});
+      this.projectTitle,
+      this.tech1,
+      this.tech2,
+      this.tech3});
 
   @override
   Widget build(BuildContext context) {
     var size = MediaQuery.of(context).size;
     return Container(
-      height: size.height / 0.999,
-      width: size.width - 100,
-      //color: Colors.tealAccent,
+      height: size.height /3,
+      // width: size.width - 100,
+      // color: Colors.tealAccent,
       child: Column(
         children: [
           Container(
-            height: size.height - 100,
-            width: size.width - 84,
+            height: size.height/3 ,//- 100,
+            width: size.width, //- 84,
             child: Stack(
               children: [
                 //Image
@@ -39,9 +39,9 @@ class FeatureProject extends StatelessWidget {
                   top: size.height * 0.02,
                   left: 20.0,
                   child: Container(
-                    height: size.height * 0.60,
-                    width: size.width * 0.5,
-                    //color: Colors.redAccent,
+                    height: 200,//size.height * 0.60,
+                    width: 200,//size.width * 0.5,
+                    // color: Colors.redAccent,
                     child: Image(
                       fit: BoxFit.contain,
                       image: AssetImage(imagePath),
@@ -55,9 +55,9 @@ class FeatureProject extends StatelessWidget {
                   right: 10.0,
                   child: Container(
                     alignment: Alignment.center,
-                    height: size.height * 0.18,
-                    width: size.width * 0.35,
-                    color: Color(0xff172A45),
+                    // height: size.height * 0.18,
+                    // width: size.width * 0.35,
+                    color: Colors.white,
                     child: Wrap(
                       alignment: WrapAlignment.center,
                       children: [
@@ -66,7 +66,7 @@ class FeatureProject extends StatelessWidget {
                           child: CustomText(
                             text: projectDesc,
                             textsize: 16.0,
-                            color: Colors.white.withOpacity(0.4),
+                            color: Colors.black,
                             letterSpacing: 0.75,
                           ),
                         ),

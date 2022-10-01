@@ -15,6 +15,7 @@ dependencies:
   steps: ^1.0.1
   url_launcher: ^5.5.0
   font_awesome_flutter: ^8.8.1
+  flutter_credit_card: ^3.0.4
   scroll_to_index:
 
 
@@ -25,7 +26,8 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-
+  flutter_svg: ^1.1.5
+  email_validator: ^2.1.17
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 
@@ -38,7 +40,10 @@ flutter:
   uses-material-design: true
 
   assets:
-      - images/
+    - assets/images/
+    - assets/img/
+    - assets/icons/
+    - assets/newicons/
 
   # To add assets to your application, add an assets section, like this:
   # assets:

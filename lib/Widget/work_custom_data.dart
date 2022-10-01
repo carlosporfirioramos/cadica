@@ -21,7 +21,7 @@ class WorkCustomData extends StatelessWidget {
           title,
           style: TextStyle(
             fontSize: 22.0,
-            color: Color(0xffCCD6F6),
+            color: Colors.black,
             fontWeight: FontWeight.w700,
           ),
         ),
@@ -31,8 +31,8 @@ class WorkCustomData extends StatelessWidget {
         Text(
           subTitle,
           style: TextStyle(
-            fontSize: 13.0,
-            color: Color(0xffCCD6F6).withOpacity(0.5),
+            fontSize: 16.0,
+            color: Colors.black,//Color(0xffCCD6F6).withOpacity(0.5),
             fontWeight: FontWeight.w600,
           ),
         ),
@@ -43,7 +43,7 @@ class WorkCustomData extends StatelessWidget {
           duration,
           style: TextStyle(
             fontSize: 12.0,
-            color: Color(0xffCCD6F6).withOpacity(0.5),
+            color: Colors.black,//Color(0xffCCD6F6).withOpacity(0.5),
             fontWeight: FontWeight.w700,
           ),
         ),

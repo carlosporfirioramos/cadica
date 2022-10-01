@@ -33,7 +33,7 @@ class _WorkState extends State<Work> {
               //   width: 12.0,
               // ),
               CustomText(
-                text: "Quem usa cadica?",
+                text: "O que fazemos",
                 textsize: 26.0,
                 color: kTextColor,
                 fontWeight: FontWeight.w700,
@@ -76,29 +76,29 @@ class _WorkState extends State<Work> {
                             children: [
                               CircleAvatar(
                                 backgroundColor: Colors.pink,
-                                child: FaIcon(FontAwesomeIcons.laptopHouse,
+                                child: FaIcon(FontAwesomeIcons.moneyBill,
                                     color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.red,
-                                child: FaIcon(FontAwesomeIcons.freeCodeCamp,
+                                child: FaIcon(FontAwesomeIcons.piggyBank,
                                     color: Colors.white),
                               ),
                               CircleAvatar(
                                 backgroundColor: Colors.brown,
-                                child: FaIcon(FontAwesomeIcons.laptopCode,
+                                child: FaIcon(FontAwesomeIcons.chartLine,
                                     color: Colors.white),
                               ),
-                              CircleAvatar(
-                                backgroundColor: Colors.deepOrange,
-                                child: FaIcon(FontAwesomeIcons.coffee,
-                                    color: Colors.white),
-                              ),
-                              CircleAvatar(
-                                backgroundColor: Colors.deepPurple,
-                                child: FaIcon(FontAwesomeIcons.dev,
-                                    color: Colors.white),
-                              ),
+                              // CircleAvatar(
+                              //   backgroundColor: Colors.deepOrange,
+                              //   child: FaIcon(FontAwesomeIcons.coffee,
+                              //       color: Colors.white),
+                              // ),
+                              // CircleAvatar(
+                              //   backgroundColor: Colors.deepPurple,
+                              //   child: FaIcon(FontAwesomeIcons.dev,
+                              //       color: Colors.white),
+                              // ),
                             ],
                           )),
                         )
