@@ -34,7 +34,7 @@ class _WorkState extends State<Work> {
               // ),
               CustomText(
                 text: "O que fazemos",
-                textsize: 26.0,
+                textsize: 40.0,
                 color: kTextColor,
                 fontWeight: FontWeight.w700,
               ),

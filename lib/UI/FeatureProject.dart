@@ -10,11 +10,13 @@ class FeatureProject extends StatelessWidget {
   final String? tech2;
   final String? tech3;
   final ontab;
+  final String desconto;
 
   FeatureProject(
       {required this.imagePath,
       this.ontab,
       required this.projectDesc,
+        required this.desconto,
       this.projectTitle,
       this.tech1,
       this.tech2,
@@ -66,6 +68,33 @@ class FeatureProject extends StatelessWidget {
                           child: CustomText(
                             text: projectDesc,
                             textsize: 16.0,
+                            color: Colors.black,
+                            letterSpacing: 0.75,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                // Short Desc
+                Positioned(
+                  top: size.height / 5,
+                  right: 10.0,
+                  child: Container(
+                    alignment: Alignment.center,
+                    // height: size.height * 0.18,
+                    // width: size.width * 0.35,
+                    // color: Colors.white,
+                    child: Wrap(
+                      alignment: WrapAlignment.center,
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: CustomText(
+                            text: desconto+'% de desconto',
+                            textsize: 16.0,
+                            fontWeight: FontWeight.bold,
                             color: Colors.black,
                             letterSpacing: 0.75,
                           ),

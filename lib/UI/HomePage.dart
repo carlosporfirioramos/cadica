@@ -375,7 +375,7 @@ class _HomePageState extends State<HomePage> {
                                           padding: const EdgeInsets.only(left: 10.0),
                                           child: CustomText(
                                             text: "Parceiros",
-                                            textsize: 26.0,
+                                            textsize: 40.0,
                                             color: kTextColor,
                                             fontWeight: FontWeight.w700,
                                           ),
@@ -397,8 +397,10 @@ class _HomePageState extends State<HomePage> {
                                           projectDesc:
                                               "Investe me é uma solução que facilita investimentos para startups de pequenas e médias empresas",
                                           projectTitle: "Invest.me",
+                                          desconto: '4',
                                         ),
                                         FeatureProject(
+                                          desconto: '2',
                                           imagePath: "images/logo4.png",
                                           ontab: () {
                                             method.launchURL(
@@ -410,6 +412,7 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                         //
                                         FeatureProject(
+                                          desconto: '3',
                                           imagePath: "images/logo5.png",
                                           ontab: () {
                                             method.launchURL(
@@ -421,6 +424,7 @@ class _HomePageState extends State<HomePage> {
                                         ),
                                         //
                                         FeatureProject(
+                                          desconto: '1.5',
                                           imagePath: "images/seaside.png",
                                           ontab: () {
                                             method.launchURL(

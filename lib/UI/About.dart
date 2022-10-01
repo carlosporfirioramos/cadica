@@ -72,7 +72,7 @@ class About extends StatelessWidget {
                   children: [
                     CustomText(
                       text: "Quem somos",
-                      textsize: 26.0,
+                      textsize: 40.0,
                       color: kTextColor,
                       fontWeight: FontWeight.w700,
                     ),

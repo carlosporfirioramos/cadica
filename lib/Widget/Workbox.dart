@@ -9,7 +9,7 @@ class WorkBox extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         WorkCustomData(
-          title: "Poupança.",
+          title: "Poupança",
           subTitle: "A CADICA não é uma simples carteira digital, somos também um meio de poupança.",
           duration: "",
         ),
